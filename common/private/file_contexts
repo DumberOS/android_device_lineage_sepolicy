@@ -18,3 +18,5 @@
 
 # Bash
 /(system_ext|system/system_ext)/bin/bash          u:object_r:shell_exec:s0
+
+/system/bin/hw/android\.hardware\.lights-service\.example    u:object_r:hal_light_default_exec:s0
