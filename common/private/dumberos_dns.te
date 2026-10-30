@@ -1,0 +1,5 @@
+# The App Blocker (system UID) owns the local list; the resolver may only read it.
+type dumberos_dns_data_file, file_type, data_file_type, core_data_file_type;
+allow system_app dumberos_dns_data_file:dir create_dir_perms;
+allow system_app dumberos_dns_data_file:file create_file_perms;
+r_dir_file(netd, dumberos_dns_data_file)
